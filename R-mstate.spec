@@ -4,15 +4,13 @@
 #
 Name     : R-mstate
 Version  : 0.2.11
-Release  : 8
+Release  : 9
 URL      : https://cran.r-project.org/src/contrib/mstate_0.2.11.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/mstate_0.2.11.tar.gz
 Summary  : Data Preparation, Estimation and Prediction in Multi-State
 Group    : Development/Tools
 License  : GPL-2.0+
 Requires: R-mstate-lib = %{version}-%{release}
-Requires: R-RColorBrewer
-Requires: R-cmprsk
 BuildRequires : R-RColorBrewer
 BuildRequires : R-cmprsk
 BuildRequires : buildreq-R
@@ -36,10 +34,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1552793540
+export SOURCE_DATE_EPOCH=1552948350
 
 %install
-export SOURCE_DATE_EPOCH=1552793540
+export SOURCE_DATE_EPOCH=1552948350
 rm -rf %{buildroot}
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
