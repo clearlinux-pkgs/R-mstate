@@ -4,7 +4,7 @@
 #
 Name     : R-mstate
 Version  : 0.2.11
-Release  : 14
+Release  : 15
 URL      : https://cran.r-project.org/src/contrib/mstate_0.2.11.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/mstate_0.2.11.tar.gz
 Summary  : Data Preparation, Estimation and Prediction in Multi-State
