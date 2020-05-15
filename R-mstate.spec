@@ -4,7 +4,7 @@
 #
 Name     : R-mstate
 Version  : 0.2.12
-Release  : 17
+Release  : 18
 URL      : https://cran.r-project.org/src/contrib/mstate_0.2.12.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/mstate_0.2.12.tar.gz
 Summary  : Data Preparation, Estimation and Prediction in Multi-State
@@ -30,21 +30,22 @@ lib components for the R-mstate package.
 
 %prep
 %setup -q -c -n mstate
+cd %{_builddir}/mstate
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1578175703
+export SOURCE_DATE_EPOCH=1589531770
 
 %install
-export SOURCE_DATE_EPOCH=1578175703
+export SOURCE_DATE_EPOCH=1589531770
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
+export FCFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
+export FFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
 export CXXFLAGS="$CXXFLAGS -O3 -flto -fno-semantic-interposition "
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
