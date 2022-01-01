@@ -4,7 +4,7 @@
 #
 Name     : R-mstate
 Version  : 0.3.2
-Release  : 32
+Release  : 33
 URL      : https://cran.r-project.org/src/contrib/mstate_0.3.2.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/mstate_0.3.2.tar.gz
 Summary  : Data Preparation, Estimation and Prediction in Multi-State
@@ -48,10 +48,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1636398498
+export SOURCE_DATE_EPOCH=1641063862
 
 %install
-export SOURCE_DATE_EPOCH=1636398498
+export SOURCE_DATE_EPOCH=1641063862
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
